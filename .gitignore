@@ -1,0 +1,8 @@
+Backend/node_modules/
+
+.DS_Store
+dist/
+logs/
+*.log
+coverage/
+.vscode/
