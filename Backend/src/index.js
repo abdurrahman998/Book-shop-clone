@@ -1,6 +1,7 @@
 import express from 'express';
 import "dotenv/config"
 import authRotes from "./routes/authRotes.js"
+import bookRoutes from "./routes/bookRoutes.js"
 import {connectDB} from "./lib/db.js"
 
 const app = express();
@@ -9,6 +10,10 @@ const port = process.env.PORT
 
 
 app.use("/api/auth", authRotes);
+app.use("/api/book", bookRoutes);
+
+
+
 
 
 // console.log(authRotes);
